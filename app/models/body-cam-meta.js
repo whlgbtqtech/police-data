@@ -33,12 +33,24 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
   size_mb: {
       type: Number
   },
-  duration_seconds: {},
-  owner_first_name: {},
-  owner_last_name: {},
-  owner_badge_id: {},
-  categories: {},
-  evidence_tags: {}
+  duration_seconds: {
+      type: Number
+  },
+  owner_first_name: {
+      type: String
+  },
+  owner_last_name: {
+      type: String
+  },
+  owner_badge_id: {
+      type: Number
+  },
+  categories: {
+      type: String
+  },
+  evidence_tags: {
+      type: String
+  }
   });
 
   // virtuals
