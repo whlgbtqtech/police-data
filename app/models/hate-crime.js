@@ -7,7 +7,7 @@ var mongoosePaginate = require('mongoose-paginate');
 exports = module.exports = function(mongoose, iglooMongoosePlugin) {
 
   var HateCrime = new mongoose.Schema({
-     id,
+     id: {},
      incidentNumber: {
          type: Number
      },
@@ -21,7 +21,7 @@ exports = module.exports = function(mongoose, iglooMongoosePlugin) {
          type: String
      },
      biasMotivationGroup: {
-         type; String
+         type: String
      },
      biasTargetedAgainst: {
          type: String
